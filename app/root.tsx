@@ -49,59 +49,50 @@ export default function App() {
 export function ErrorBoundary() {
   const error = useRouteError();
   console.error(error);
+
   return (
-    <html lang="en">
-      <head>
-        <title>Oh no!</title>
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <main className="max-w-xl mx-auto mt-24 p-6 text-center animate-fadeIn">
-          <div className="mb-6">
-            <svg
-              className="mx-auto h-20 w-20 text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 48 48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9.75 9.75h28.5v28.5H9.75z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M16 16l16 16m0-16L16 32"
-              />
-            </svg>
-          </div>
+    <main className="max-w-xl mx-auto mt-24 p-6 text-center animate-fadeIn">
+      <div className="mb-6">
+        <svg
+          className="mx-auto h-20 w-20 text-blue-500"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9.75 9.75h28.5v28.5H9.75z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M16 16l16 16m0-16L16 32"
+          />
+        </svg>
+      </div>
 
-          <h1 className="text-5xl font-extrabold text-gray-800 mb-4">
-            404 – Article Not Found
-          </h1>
+      <h1 className="text-5xl font-extrabold text-gray-800 mb-4">
+        404 – Something Went Wrong
+      </h1>
 
-          <p className="text-lg text-gray-600 mb-2">
-            Oops, we couldn’t find the article you were looking for.
-          </p>
+      <p className="text-lg text-gray-600 mb-2">
+        Oops, we couldn’t load this page properly.
+      </p>
 
-          <p className="text-sm text-gray-500 mb-6">
-            You’ll be redirected to the homepage in a few seconds.
-          </p>
+      <p className="text-sm text-gray-500 mb-6">
+        You’ll be redirected to the homepage in a few seconds.
+      </p>
 
-          <Link
-            to="/"
-            className="inline-block bg-blue-600 text-white px-6 py-2 text-sm rounded-full hover:bg-blue-700 transition duration-300"
-          >
-            Go back now
-          </Link>
-        </main>
-        <Scripts />
-      </body>
-    </html>
+      <Link
+        to="/"
+        className="inline-block bg-blue-600 text-white px-6 py-2 text-sm rounded-full hover:bg-blue-700 transition duration-300"
+      >
+        Go back now
+      </Link>
+    </main>
   );
 }
