@@ -2,23 +2,30 @@ import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
-    <main className="max-w-3xl mt-20 mx-auto p-6">
-      <h1 className="text-4xl font-bold text-gray-800 mb-4">
-        Welcome to Remix Learn Hub
-      </h1>
-      <p className="text-lg text-gray-700 mb-6">
-        Explore insightful articles about learning new web technologies with
-        Remix. Whether you{"'"}re just starting out or deepening your expertise,
-        you{"'"}ll find useful resources to guide your journey.
-      </p>
-      <div>
+    <main className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 flex items-center justify-center px-4">
+      <section className="max-w-3xl text-center p-8 bg-white rounded-xl shadow-lg ring-1 ring-gray-200 animate-fadeIn">
+        <h1 className="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+          Welcome to <span className="text-blue-600">Remix Learn Hub</span>
+        </h1>
+        <p className="text-lg text-gray-700 mb-8">
+          Discover thoughtful articles about modern web technologies with Remix.
+          Whether you{"'"}re a beginner or growing as a developer, you{"'"}ll
+          find curated resources to guide your journey.
+        </p>
+
+        <img
+          src="/software-dev.jpg"
+          alt="Learning with Remix"
+          className="mx-auto mb-8 rounded-lg shadow-lg w-full max-h-64 object-cover"
+        />
+
         <Link
           to="/articles"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          className="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow hover:bg-blue-700 transition duration-300"
         >
-          Browse Articles
+          📚 Browse Articles
         </Link>
-      </div>
+      </section>
     </main>
   );
 }
