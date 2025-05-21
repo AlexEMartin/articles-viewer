@@ -1,4 +1,3 @@
-// app/routes/articles/$articleId.tsx
 import { LoaderFunction, data } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { articles, Article } from "~/data/articles";
@@ -8,7 +7,7 @@ export const loader: LoaderFunction = ({ params }) => {
   if (!article) {
     throw new Response("Article Not Found", { status: 404 });
   }
-  return data(article); 
+  return data(article);
 };
 
 export default function ArticleView() {
@@ -16,6 +15,14 @@ export default function ArticleView() {
 
   return (
     <main className="max-w-2xl mt-20 mx-auto p-6">
+      <div className="mb-6">
+        <img
+          src="/software-dev.jpg"
+          alt="Technology article cover"
+          className="w-full h-64 object-cover rounded-lg shadow"
+        />
+      </div>
+
       <h1 className="text-3xl font-bold text-gray-900 mb-2">{article.title}</h1>
       <p className="text-gray-600 mb-6">
         <strong>{article.author}</strong> – {article.publishedDate}

@@ -7,9 +7,9 @@ export default function Index() {
         Welcome to Remix Learn Hub
       </h1>
       <p className="text-lg text-gray-700 mb-6">
-        Explore insightful articles about learning new web technologies with Remix.
-        Whether you{"'"}re just starting out or deepening your expertise, you{"'"}ll find
-        useful resources to guide your journey.
+        Explore insightful articles about learning new web technologies with
+        Remix. Whether you{"'"}re just starting out or deepening your expertise,
+        you{"'"}ll find useful resources to guide your journey.
       </p>
       <div>
         <Link
