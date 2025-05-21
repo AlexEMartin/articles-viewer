@@ -1,4 +1,3 @@
-// app/routes/_index.tsx
 import { LoaderFunction } from "@remix-run/node";
 import { useLoaderData, Link, data } from "@remix-run/react";
 import { articles, Article } from "~/data/articles";
@@ -7,7 +6,7 @@ export const loader: LoaderFunction = () => {
   return data(articles);
 };
 
-export default function Index() {
+export default function ArticlesList() {
   const data = useLoaderData<Article[]>();
 
   return (
@@ -23,9 +22,7 @@ export default function Index() {
               <Link to={`/articles/${article.id}`}>{article.title}</Link>
             </h2>
             <p className="text-gray-700 mt-1">{article.summary}</p>
-            <p className="text-sm text-gray-500 mt-2">
-              By {article.author} on {article.publishedDate}
-            </p>
+            <p className="text-sm text-gray-500 mt-2">By {article.author}</p>
           </li>
         ))}
       </ul>
