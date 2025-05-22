@@ -1,40 +1,39 @@
-# Welcome to Remix!
+# 📰 Remix Articles Viewer
 
-- 📖 [Remix docs](https://remix.run/docs)
+A clean, dynamic web application built with **Remix** and **TypeScript**, created to solve **Challenge 1: Dynamic Article Viewer**.
 
-## Development
+This project displays a list of tech articles and allows users to view full content on a separate detail page. All data is loaded **server-side** using Remix's loader functions.
 
-Run the dev server:
+---
 
-```shellscript
-npm run dev
-```
+## 🚀 Tech Stack
 
-## Deployment
+- ⚛️ [Remix](https://remix.run/) (with Vite)
+- 🔷 TypeScript
+- 💨 Tailwind CSS
+- 📦 Node.js (for local development)
 
-First, build your app for production:
+---
 
-```sh
-npm run build
-```
+## 🎯 Challenge Overview
 
-Then run the app in production mode:
+This project fulfills all the requirements of **Challenge 1: Dynamic Article Viewer**:
 
-```sh
-npm start
-```
+### ✅ Features Implemented
 
-Now you'll need to pick a host to deploy it to.
+- **List View:** `/articles`
+  - Server-side data loading of all articles
+  - Displays title, author, and summary
+  - Clean and responsive styling
+  - Clickable titles link to detailed view
 
-### DIY
+- **Detail View:** `/articles/:articleId`
+  - Displays full article content
+  - Server-resolved data for each article ID
+  - Handles "not found" states gracefully with a styled 404 page and automatic redirect
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+---
 
-Make sure to deploy the output of `npm run build`
+## 🛠️ Getting Started
 
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+### 📦 Clone the Repository
