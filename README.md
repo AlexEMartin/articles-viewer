@@ -39,19 +39,19 @@ This project fulfills all the requirements of **Challenge 1: Dynamic Article Vie
 
 ## 🛠️ Getting Started
 
-# 🧬 Clone the repository
+### 🧬 Clone the repository
 
 `git clone git@github.com:AlexEMartin/articles-viewer.git`
 
-# 📂 Navigate into the project directory
+### 📂 Navigate into the project directory
 
 `cd articles-viewer`
 
-# 📥 Install all necessary dependencies
+### 📥 Install all necessary dependencies
 
 `npm install`
 
-# 🚀 Start the development server
+### 🚀 Start the development server
 
 `npm run dev`
 
