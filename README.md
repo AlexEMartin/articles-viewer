@@ -4,6 +4,8 @@ A clean, dynamic web application built with **Remix** and **TypeScript**, create
 
 This project displays a list of tech articles and allows users to view full content on a separate detail page. All data is loaded **server-side** using Remix's loader functions.
 
+# 🚀 Deploy: https://articles-viewer.vercel.app/
+
 ---
 
 ## 🚀 Tech Stack
